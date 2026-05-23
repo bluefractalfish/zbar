@@ -8,6 +8,10 @@
 a { 
     color: inherit;
     text-decoration: none;
+    transition: letter-spacing 100ms ease-in-out;
+}
+a:hover{
+    letter-spacing: 1px;
 }
 
 html, body {
