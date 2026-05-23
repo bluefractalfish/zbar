@@ -1,10 +1,26 @@
-title: zbar.blog
-markdown: kramdown
-
-baseurl: ""
+title: ZBAR
+description: writing, notes, fragments, and updates.
 url: "https://zbar.blog"
+baseurl: ""
 
+markdown: kramdown
 permalink: /:year/:month/:day/:title/
+timezone: America/Denver
+future: false
+
+navigation:
+  - title: home
+    url: /
+  - title: blog
+    url: /blog/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: ZBAR
 
 
 

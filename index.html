@@ -1,12 +1,49 @@
---- 
-layout: default 
---- 
+---
+layout: default
+title: ZBAR
+bg: "#124aff"
+fg: "#fff41a"
+---
 
-<body style="--bg: #124aff;
-             --fg: #fff41a;
-             --margin: 10px; ">
+<nav class="head-row" style="border-bottom: 1px solid var(--fg);">
+  <a class="type__prose" href="{{ '/' | relative_url }}">ZBAR</a>
+  <a class="type__prose" href="{{ '/blog/' | relative_url }}">blog</a>
+</nav>
 
-<nav class="head-row" style="border-bottom: 1px solid var(--fg);"> <span class="type__prose"> ZBAR </span>  </nav>
+<section class="home text-block">
+  <header class="home__header">
+    <h1 class="wordmark">ZBAR</h1>
+    <p class="type__prose">writing, notes, fragments, and updates.</p>
+  </header>
 
+  <section class="home__posts">
+    <div class="___row">
+      <span></span>
+      <h2 class="type__mark">latest posts</h2>
+      <span></span>
+    </div>
 
-</body>
+    <div class="post-list">
+      {% for post in site.posts limit: 6 %}
+        <article class="post__card">
+          <a class="post__card-link" href="{{ post.url | relative_url }}">
+            <p class="post__date type__mark">{{ post.date | date: "%Y.%m.%d" }}</p>
+            <h3>{{ post.title }}</h3>
+
+            {% if post.description %}
+              <p class="type__prose">{{ post.description }}</p>
+            {% else %}
+              <p class="type__prose">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+            {% endif %}
+          </a>
+        </article>
+      {% else %}
+        <p class="type__prose">No posts yet.</p>
+      {% endfor %}
+    </div>
+
+    <p>
+      <a class="button" href="{{ '/blog/' | relative_url }}">view all posts</a>
+    </p>
+  </section>
+</section>

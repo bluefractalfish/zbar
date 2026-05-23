@@ -1,0 +1,32 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<section class="blog-index text-block">
+  <header class="blog-index__header">
+    <p class="type__mark">ZBAR</p>
+    <h1 class="type__display">blog</h1>
+    <p class="type__prose">notes, fragments, posts, and updates.</p>
+  </header>
+
+  <div class="post-list">
+    {% for post in site.posts %}
+      <article class="post__card">
+        <a class="post__card-link" href="{{ post.url | relative_url }}">
+          <p class="post__date type__mark">{{ post.date | date: "%Y.%m.%d" }}</p>
+          <h2>{{ post.title }}</h2>
+
+          {% if post.description %}
+            <p class="type__prose">{{ post.description }}</p>
+          {% else %}
+            <p class="type__prose">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+          {% endif %}
+        </a>
+      </article>
+    {% else %}
+      <p class="type__prose">No posts yet.</p>
+    {% endfor %}
+  </div>
+</section>

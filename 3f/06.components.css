@@ -46,3 +46,74 @@
     background: var(--fg);
     color: var(--bg);
 }
+
+.home__header {
+  min-height: 45vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.home__posts {
+  margin-top: var(--space-3);
+}
+
+.blog-index__header,
+.post__header {
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+.post-list {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.post__card {
+  display: block;
+  border-top: 1px solid var(--fg);
+}
+
+.post__card:last-child {
+  border-bottom: 1px solid var(--fg);
+}
+
+.post__card-link {
+  display: block;
+  padding: var(--space-2);
+  color: inherit;
+  text-decoration: none;
+  transition: var(--t-med) var(--ease);
+}
+
+.post__card-link:hover {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+.post__date,
+.post__meta {
+  margin-bottom: var(--space-1);
+}
+
+.post__title {
+  text-align: center;
+}
+
+.post__body {
+  margin-top: var(--space-3);
+}
+
+.post__body p,
+.post__body ul,
+.post__body ol,
+.post__body blockquote,
+.post__body pre {
+  margin-block: var(--space-2);
+}
+
+.post__footer {
+  margin-top: var(--space-3);
+  border-top: 1px solid var(--fg);
+  padding-top: var(--space-2);
+}
