@@ -1,5 +1,5 @@
 title: ZBAR
-description: writing, notes, fragments, and updates.
+description: writing, notes, fragments, and reviews
 url: "https://zbar.blog"
 baseurl: ""
 
@@ -13,6 +13,8 @@ navigation:
     url: /
   - title: blog
     url: /blog/
+  - title: reviews 
+    url: /reviews/
 
 defaults:
   - scope:

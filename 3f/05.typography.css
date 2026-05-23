@@ -46,7 +46,7 @@
   --font-body: var(--plex-mono);
   --font-ui: var(--public-sans);
   --font-mono: var(--recursive);
-  --font-prose: var(--fraunces);
+  --font-prose: var(--plex-mono);
   --font-mark: var(--fragment-mono);
 }
 
