@@ -1,0 +1,12 @@
+title: zbar.blog
+markdown: kramdown
+
+baseurl: ""
+url: "https://zbar.blog"
+
+permalink: /:year/:month/:day/:title/
+
+
+
+
+

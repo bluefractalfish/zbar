@@ -1,0 +1,24 @@
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/3f/fff.css' | relative_url }}">
+
+</head>
+
+<body>
+<main class="page" style="{%if page.bg%} --bg:{{page.bg}};{%endif%}{%if page.fg%} --fg:{{page.fg}};{%endif%}">
+        <div id="doc-marginalia" class="marginalia marginalia--document"></div>
+
+            <main class="page__content {{ page.content_class }}">
+
+            {{ content }}
+
+            </main>
+    </div>
+  </main>
+</body>
+</html>
+
