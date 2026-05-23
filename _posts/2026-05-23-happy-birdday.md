@@ -1,13 +1,13 @@
 ---
 title: happy bird day
-description: The first automatic ZBAR blog post.
+description: happy 26th to the light of my life.
 ---
 
 This is the first ZBAR post, to celebrate the ZBAR.
 
 Write posts as Markdown files inside `_posts`.
 
-The filename format does matter:
+The filename format **does matter** because im not a magician...:
 
 ```txt
 YYYY-MM-DD-post-title.md
